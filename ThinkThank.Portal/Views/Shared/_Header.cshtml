@@ -39,12 +39,13 @@
             </div>
             <div id="w-node-_480d1275-dcfc-79ee-1f0a-16e40307819e-03078196" class="nav-menu-wrap">
                 <div class="select">
-                        <select class="custom-select" id="custom-select">
-                            @foreach (var item in cultureList)
-                            {
-                                <option onchange="setCulture('@item.Name')" value="@item.Name">@item.DisplayName</option>
-                            }
-                        </select>
+                    <select onchange="setCulture(this.value)" class="custom-select" id="custom-select">
+                        <option value="null">Select Language</option>
+                        @foreach (var item in cultureList)
+                        {
+                            <option value="@item.Name">@item.DisplayName</option>
+                        }
+                    </select>
                 </div>
             </div>
             <a id="w-node-_480d1275-dcfc-79ee-1f0a-16e4030781aa-03078196" href="/" aria-current="page" class="brand w-nav-brand w--current">
