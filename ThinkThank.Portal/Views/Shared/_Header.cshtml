@@ -39,10 +39,10 @@
             </div>
             <div id="w-node-_480d1275-dcfc-79ee-1f0a-16e40307819e-03078196" class="nav-menu-wrap">
                 <div class="select">
-                        <select class="custom-select" id="custom-select" onchange="setCulture()">
+                        <select class="custom-select" id="custom-select">
                             @foreach (var item in cultureList)
                             {
-                                <option value="@item.Name">@item.DisplayName</option>
+                                <option onchange="setCulture('@item.Name')" value="@item.Name">@item.DisplayName</option>
                             }
                         </select>
                 </div>
@@ -59,12 +59,9 @@
 
 
 <script>
-        function setCulture() {
-            debugger
-            const selectElement = document.getElementById('custom-select');
-            const selectedValue = selectElement.value;
+        function setCulture(name) {
             let currentUrl = new URL(window.location.href);
-            currentUrl.searchParams.set('culture', selectedValue);
+            currentUrl.searchParams.set('culture', name);
             window.location.href = currentUrl.toString();
         }
 </script>
