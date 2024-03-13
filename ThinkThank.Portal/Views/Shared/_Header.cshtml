@@ -15,32 +15,36 @@
             <div id="w-node-_480d1275-dcfc-79ee-1f0a-16e403078199-03078196" class="nav-left">
                 <nav role="navigation" class="nav-menu w-nav-menu">
                     <a href="/" aria-current="page" class="nav-link w-nav-link w--current">@loc["Home"]</a>
-                    <a href="/about" class="nav-link w-nav-link">About</a>
+                    <a href="/home/about" class="nav-link w-nav-link">@loc["About"]</a>
                     <div data-hover="true" data-delay="0" data-w-id="2ae27c35-fa97-7d1e-9da0-e68021326e93" class="w-dropdown">
                         <div class="dropdown-toggle nav-link w-dropdown-toggle">
-                            <div>Pages</div>
+                            <div>@loc["Pages"]</div>
                             <div class="dropdown-icon w-icon-dropdown-toggle"></div>
                         </div>
                         <nav class="dropdown-list w-dropdown-list">
                             <a href="/" aria-current="page" class="dropdown-link w-dropdown-link w--current">@loc["Home"]</a>
-                            <a href="/home-2" class="dropdown-link w-dropdown-link">@loc["Home"] 2</a>
-                            <a href="/about" class="dropdown-link w-dropdown-link">About</a>
-                            <a href="/work" class="dropdown-link w-dropdown-link">Work</a>
-                            <a href="/service" class="dropdown-link w-dropdown-link">Service</a>
-                            <a href="/service-details" class="dropdown-link w-dropdown-link">Service details</a>
-                            <a href="/careers" class="dropdown-link w-dropdown-link">Careers</a>
-                            <a href="/blog" class="dropdown-link w-dropdown-link">Blog</a>
-                            <a href="/contact" class="dropdown-link w-dropdown-link">Contact</a>
-                            <a href="/privacy-policy" class="dropdown-link w-dropdown-link">Privacy Policy</a>
+                            <a href="/" class="dropdown-link w-dropdown-link">@loc["Home"] 2</a>
+                            <a href="/home/about" class="dropdown-link w-dropdown-link">@loc["About"]</a>
+                            <a href="/home/work" class="dropdown-link w-dropdown-link">@loc["Work"]</a>
+                            <a href="/home/service" class="dropdown-link w-dropdown-link">@loc["Service"]</a>
+                            <a href="/home/service-details" class="dropdown-link w-dropdown-link">@loc["Service details"]</a>
+                            <a href="/home/careers" class="dropdown-link w-dropdown-link">@loc["Careers"]</a>
+                            <a href="/home/blog" class="dropdown-link w-dropdown-link">@loc["Blog"]</a>
+                            <a href="/home/contact" class="dropdown-link w-dropdown-link">@loc["Contact"]</a>
+                            <a href="/home/privacy-policy" class="dropdown-link w-dropdown-link">@loc["Privacy Policy"]</a>
                         </nav>
                     </div>
-                    <a href="/work" class="nav-link w-nav-link">Work</a>
+                    <a href="/home/work" class="nav-link w-nav-link">@loc["Work"]</a>
                 </nav>
             </div>
-            <div id="w-node-_480d1275-dcfc-79ee-1f0a-16e40307819e-03078196" class="nav-menu-wrap">
+                 <div id="w-node-_480d1275-dcfc-79ee-1f0a-16e40307819e-03078196" class="nav-menu-wrap">
+                                <a href="/home/contact" class="button-primary-2 nav-button w-inline-block">
+                                    <div>Contact</div>
+                                    <img src="images/arrow-icon-left.svg" loading="lazy" alt=""/>
+                                </a>
                 <div class="select">
                     <select onchange="setCulture(this.value)" class="custom-select" id="custom-select">
-                        <option value="null">Select Language</option>
+                        <option value="null">@loc["Select Language"]</option>
                         @foreach (var item in cultureList)
                         {
                             <option value="@item.Name">@item.DisplayName</option>
@@ -49,7 +53,7 @@
                 </div>
             </div>
             <a id="w-node-_480d1275-dcfc-79ee-1f0a-16e4030781aa-03078196" href="/" aria-current="page" class="brand w-nav-brand w--current">
-                <img src="images/thinktank.svg" loading="lazy" alt="Logo" class="logo"/>
+                <img src="~/images/thinktank.svg" loading="lazy" alt="Logo" class="logo"/>
             </a>
             <div class="menu-button w-nav-button">
                 <div class="w-icon-nav-menu"></div>

@@ -119,5 +119,18 @@
     <data name=". e-commerce solutions" xml:space="preserve">
     <value>. решения электронной коммерции</value>
 </data>
+    <data name="About" xml:space="preserve">
+    <value>О сайте</value>
+</data>
+    <data name="Work" xml:space="preserve">
+    <value>Работа</value>
+</data>
+    <data name="Pages" xml:space="preserve">
+    <value>Страницы</value>
+</data>
+    <data name="Select Language" xml:space="preserve">
+    <value>Выбор языка</value>
+</data>
+
 
 </root>

@@ -25,9 +25,8 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
-
-
-builder.Services.AddMvc()
+builder.Services
+    .AddMvc()
     .AddDataAnnotationsLocalization(options =>
     {
         options.DataAnnotationLocalizerProvider = (type, factory) =>
